@@ -1,0 +1,36 @@
+#partners {
+  background-color: #7dc467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  padding: 5rem 2rem;
+
+  .partners__header {
+    margin-bottom: 3rem;
+  }
+
+  .partners__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  .partner-detail {
+    max-width: 225px;
+    min-height: 325px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    h3 {
+      margin: 0;
+    }
+  }
+}
