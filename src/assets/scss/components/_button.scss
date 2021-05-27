@@ -61,6 +61,17 @@ button,
     }
   }
 
+  &.card-btn {
+    background-color: transparent;
+    color: #1c1c1c !important;
+    // border: 2px #1c1c1c solid;
+    box-shadow: none;
+    // font-weight: _font(weight-bold);
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
   &.disabled,
   &:disabled {
     @include vendor('pointer-events', 'none');

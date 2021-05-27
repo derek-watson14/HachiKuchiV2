@@ -154,62 +154,97 @@ class IndexPage extends React.Component {
             </div>
           </section>
           <section id="partners" className="wrapper">
-            <h2 className="major partners__header">Our Partners</h2>
+            <div className="partners__header">
+              <h2 className="major partners__header--text">
+                Partner Organizations
+              </h2>
+            </div>
             <div className="partners__info">
               <Bounce bottom delay={0}>
                 <div className="partner-detail">
-                  <h3>Crackheads</h3>
-                  <p>
-                    In the future, will you be able to dynamically transform
-                    stand-ups in your business? Competitive big datas are
-                    becoming company-wide synergy experts.
-                  </p>
-                  <button>Learn more</button>
+                  <div className="partner-detail__backdrop"></div>
+                  <div className="partner-detail__content">
+                    <h3>Rabbit Hole Recording Studios</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime, voluptatem. Omnis molestias laborum explicabo!
+                      Repellendus fuga earum odit, error mollitia eum vitae,
+                      distinctio quas ex nam quia iste, non doloribus.
+                    </p>
+                    <button className="card-btn">Learn more</button>
+                  </div>
                 </div>
               </Bounce>
               <Bounce bottom delay={100}>
                 <div className="partner-detail">
-                  <h3>Meth Addicts</h3>
-                  <p>
-                    Efficiencies will come from iteratively investing our
-                    siloes. In the future, will you be able to intelligently
-                    strategize core assets in your business?
-                  </p>
-                  <button>Learn more</button>
+                  <div className="partner-detail__backdrop"></div>
+                  <div className="partner-detail__content">
+                    <h3>Qbldy Productions</h3>
+                    <p>
+                      In the future, will you be able to dynamically transform
+                      stand-ups in your business? Competitive big datas are
+                      becoming company-wide synergy experts.
+                    </p>
+                    <button className="card-btn">Learn more</button>
+                  </div>
                 </div>
               </Bounce>
               <Bounce bottom delay={200}>
                 <div className="partner-detail">
-                  <h3>Barb</h3>
-                  <p>
-                    Our paradigm shift development lifecycle enables mission
-                    critical, actionable team players. Efficiencies will come
-                    from proactively monetizing our capabilities.
-                  </p>
-                  <button>Learn more</button>
+                  <div className="partner-detail__backdrop"></div>
+                  <div className="partner-detail__content">
+                    <h3>Strawberry Fields</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odio repellendus fugiat perspiciatis pariatur illo
+                      reprehenderit quod consectetur corporis unde incidunt, in
+                      ratione facilis, reiciendis voluptas.
+                    </p>
+                    <button className="card-btn">Learn more</button>
+                  </div>
                 </div>
               </Bounce>
               <Bounce bottom delay={300}>
                 <div className="partner-detail">
-                  <h3>Loose Whores</h3>
-                  <p>
-                    In the future, will you be able to dynamically deep-dive
-                    brands in your business? Ethically reusing intelligently
-                    customer-focused diversities is crucial to our world-class
-                    prince2 practitioner.
-                  </p>
-                  <button>Learn more</button>
+                  <div className="partner-detail__backdrop"></div>
+                  <div className="partner-detail__content">
+                    <h3>Wonderland Cleaning</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Labore pariatur provident ratione neque quod sapiente eum
+                      consectetur exercitationem enim dolore velit iusto rem
+                      laborum error nostrum modi nulla dolor, dolorem odio
+                      deleniti at placeat cum.
+                    </p>
+                    <button className="card-btn">Learn more</button>
+                  </div>
                 </div>
               </Bounce>
               <Bounce bottom delay={400}>
                 <div className="partner-detail">
-                  <h3>Harriot Tubman's Ghost</h3>
-                  <p>
-                    It's critical that we give 110% when conservatively
-                    virtualising drivers. So we can hit the ground running, we
-                    will be ethically connecting every vertical in our space.
-                  </p>
-                  <button>Learn more</button>
+                  <div className="partner-detail__backdrop"></div>
+                  <div className="partner-detail__content">
+                    <h3>John Morey Design</h3>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Laudantium magnam ex modi repellendus adipisci illum.
+                    </p>
+                    <button className="card-btn">Learn more</button>
+                  </div>
+                </div>
+              </Bounce>
+              <Bounce bottom delay={500}>
+                <div className="partner-detail">
+                  <div className="partner-detail__backdrop"></div>
+                  <div className="partner-detail__content">
+                    <h3>Fathoming Events</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Rem vero corrupti tempora qui provident ducimus laboriosam
+                      optio ex eius quam.
+                    </p>
+                    <button className="card-btn">Learn more</button>
+                  </div>
                 </div>
               </Bounce>
             </div>
