@@ -1,10 +1,10 @@
 import React from 'react'
 
 import derek from '../../images/team/derek.jpg'
-import tubman from '../../images/team/tubman.jpg'
+import robby from '../../images/team/robby.jpg'
+import jeff from '../../images/team/jeff.jpg'
 import tyler from '../../images/team/tyler.jpg'
-import barb from '../../images/team/barb.jpg'
-import zuck from '../../images/team/zuck.jpg'
+import andrew from '../../images/team/andrew.jpg'
 
 class TeamSection extends React.Component {
   render() {
@@ -15,26 +15,26 @@ class TeamSection extends React.Component {
           <div className="member">
             <img className="member__img" src={derek} alt="" />
             <h3>Derek Watson</h3>
-            <h5>Tech & Web Lead</h5>
+            <h5>Tech & Web</h5>
           </div>
           <div className="member">
-            <img className="member__img" src={barb} alt="" />
-            <h3>Barb</h3>
-            <h5>Fucks and burns kids</h5>
+            <img className="member__img" src={robby} alt="" />
+            <h3>Robby Vandenhole</h3>
+            <h5>HK Podcast</h5>
           </div>
           <div className="member">
             <img className="member__img" src={tyler} alt="" />
             <h3>Tyler Smiley</h3>
-            <h5>"The Lost Mongolian"</h5>
+            <h5>Community Growth</h5>
           </div>
           <div className="member">
-            <img className="member__img" src={tubman} alt="" />
+            <img className="member__img" src={jeff} alt="" />
             <h3>Jeffery Hennings</h3>
             <h5>Artist Outreach</h5>
           </div>
           <div className="member">
-            <img className="member__img" src={zuck} alt="" />
-            <h3>Mark Zuckerburg</h3>
+            <img className="member__img" src={andrew} alt="" />
+            <h3>Andrew Lawrence</h3>
             <h5>CEO of Facebook</h5>
           </div>
         </div>
