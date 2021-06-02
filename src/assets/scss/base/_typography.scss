@@ -20,7 +20,7 @@ body,
 input,
 select,
 textarea {
-  color: _palette(fg);
+  color: _palette(wht);
   font-family: _font(family);
   font-weight: _font(weight);
   font-size: 1rem;
@@ -36,7 +36,7 @@ a {
       'border-bottom-color #{_duration(transition)} ease-in-out'
     )
   );
-  border-bottom: dotted 1px _palette(fg-light);
+  border-bottom: dotted 1px _palette(wht-trans);
   text-decoration: none;
   color: inherit;
 
@@ -47,7 +47,7 @@ a {
 
 strong,
 b {
-  color: _palette(fg-bold);
+  color: _palette(wht-true);
   font-weight: _font(weight-bold);
 }
 
@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: _palette(fg-bold);
+  color: _palette(wht-true);
   font-weight: _font(weight-bold);
   line-height: 1.5;
   margin: 0 0 (_size(element-margin) * 0.5) 0;

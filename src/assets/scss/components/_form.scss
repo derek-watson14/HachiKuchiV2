@@ -57,7 +57,7 @@ form {
 }
 
 label {
-  color: _palette(fg-bold);
+  color: _palette(wht-true);
   display: block;
   font-size: 0.8rem;
   font-weight: _font(weight);
@@ -98,15 +98,15 @@ textarea {
 
   &:focus {
     background: _palette(border-bg);
-    border-color: _palette(fg-bold);
-    box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+    border-color: _palette(wht-true);
+    box-shadow: 0 0 0 _size(border-width) _palette(wht-true);
   }
 }
 
 select {
   option {
-    background: _palette(bg);
-    color: _palette(fg);
+    background: _palette(blk);
+    color: _palette(wht);
   }
 }
 
@@ -159,7 +159,7 @@ input[type='radio'] {
   & + label {
     @include icon;
     @include vendor('user-select', 'none');
-    color: _palette(fg);
+    color: _palette(wht);
     cursor: pointer;
     display: inline-block;
     font-size: 0.8rem;
@@ -195,9 +195,9 @@ input[type='radio'] {
 
   &:checked + label {
     &:before {
-      background: _palette(fg-bold) !important;
-      border-color: _palette(fg-bold) !important;
-      color: _palette(bg);
+      background: _palette(wht-true) !important;
+      border-color: _palette(wht-true) !important;
+      color: _palette(blk);
       content: '\f00c';
     }
   }
@@ -205,8 +205,8 @@ input[type='radio'] {
   &:focus + label {
     &:before {
       background: _palette(border-bg);
-      border-color: _palette(fg-bold);
-      box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+      border-color: _palette(wht-true);
+      box-shadow: 0 0 0 _size(border-width) _palette(wht-true);
     }
   }
 }
@@ -228,26 +228,26 @@ input[type='radio'] {
 }
 
 ::-webkit-input-placeholder {
-  color: _palette(fg-light) !important;
+  color: _palette(wht-trans) !important;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  color: _palette(fg-light) !important;
+  color: _palette(wht-trans) !important;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: _palette(fg-light) !important;
+  color: _palette(wht-trans) !important;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: _palette(fg-light) !important;
+  color: _palette(wht-trans) !important;
   opacity: 1;
 }
 
 .formerize-placeholder {
-  color: _palette(fg-light) !important;
+  color: _palette(wht-trans) !important;
   opacity: 1;
 }

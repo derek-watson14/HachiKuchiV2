@@ -12,7 +12,7 @@
   padding: 5rem 2rem;
 
   .partners__header {
-    background-color: #1c1c1c;
+    background-color: _palette(blk);
     padding: 10px 15px;
     margin-bottom: 4rem;
     &--text {
@@ -46,7 +46,7 @@
   }
 
   .partner-detail__backdrop {
-    background-color: #feaa1b;
+    background-color: _palette(hk-yellow);
     width: 18rem;
     height: 24rem;
     transform: rotate(5deg);
@@ -55,9 +55,9 @@
   }
 
   .partner-detail__content {
-    background-color: white;
-    color: #1c1c1c;
-    box-shadow: 0px 0px 20px -5px #1c1c1c;
+    background-color: _palette(wht);
+    color: _palette(blk);
+    box-shadow: 0px 0px 20px -5px _palette(blk);
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +75,7 @@
 
     h3 {
       margin: 0;
-      color: black;
+      color: _palette(blk-true);
     }
   }
 }

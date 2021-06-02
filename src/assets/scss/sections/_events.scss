@@ -1,5 +1,5 @@
 #events {
-  background-color: #1c1c1c;
+  background-color: _palette(blk);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +16,9 @@
     justify-items: center;
   }
   .react-calendar {
-    color: black;
+    color: _palette(blk);
     button {
-      color: black !important;
+      color: _palette(blk) !important;
       line-height: normal;
       list-style: none;
     }
@@ -27,7 +27,7 @@
     }
   }
   .event-card {
-    background: white;
+    background: _palette(wht);
     height: 100%;
     min-height: 355px;
     width: 100%;
@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     h3 {
-      color: black;
+      color: _palette(blk-true);
     }
   }
 }
