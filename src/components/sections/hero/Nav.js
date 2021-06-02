@@ -7,26 +7,27 @@ const Nav = props => {
       <ul>
         <Scroll to="about" smooth={true} offset={0} duration={500}>
           <li>
-            <button>About</button>
+            <button className="button">About</button>
           </li>
         </Scroll>
         <Scroll to="partners" smooth={true} offset={50} duration={500}>
           <li>
-            <button>Partners</button>
+            <button className="button">Partners</button>
           </li>
         </Scroll>
         <Scroll to="team" smooth={true} offset={50} duration={500}>
           <li>
-            <button>Team</button>
+            <button className="button">Team</button>
           </li>
         </Scroll>
         <Scroll to="events" smooth={true} offset={50} duration={500}>
           <li>
-            <button>Events</button>
+            <button className="button">Events</button>
           </li>
         </Scroll>
         <li>
           <button
+            className="button"
             onClick={() => {
               props.onOpenModal()
             }}

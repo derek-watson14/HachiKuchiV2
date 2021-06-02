@@ -17,14 +17,6 @@
   }
   .react-calendar {
     color: _palette(blk);
-    button {
-      color: _palette(blk) !important;
-      line-height: normal;
-      list-style: none;
-    }
-    button.react-calendar__month-view__days__day--neighboringMonth {
-      color: #757575 !important;
-    }
   }
   .event-card {
     background: _palette(wht);

@@ -9,7 +9,7 @@ const PartnerCard = props => {
         <div className="partner-detail__content">
           <h3>{props.partnerName}</h3>
           <p>{props.description}</p>
-          <button className="card-btn">Learn more</button>
+          <button className="button card-btn">Learn more</button>
         </div>
       </div>
     </Bounce>

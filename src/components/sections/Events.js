@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
 import Fade from 'react-reveal/Slide'
 import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css'
 
 const EventsSection = () => {
-  const [date, setDate] = useState(new Date())
+  const today = new Date()
+  const monthFromToday = new Date().setDate(today.getDate() + 28)
+  console.log(today, monthFromToday)
 
-  const onDateChange = newDate => {
-    console.log(newDate)
-    setDate(newDate)
-  }
-
-  // const testDateSet
+  const [date, setDate] = useState([today, monthFromToday])
+  const [showCalendar, setShowCalendar] = useState(false)
 
   return (
     <section id="events" className="wrapper">
@@ -20,9 +17,9 @@ const EventsSection = () => {
       </Fade>
       <div className="event-selector">
         <Calendar
-          className="calendar"
           minDate={new Date()}
-          onChange={onDateChange}
+          selectRange={true}
+          // onChange={onDateChange}
           value={date}
         />
         <div className="event-card">

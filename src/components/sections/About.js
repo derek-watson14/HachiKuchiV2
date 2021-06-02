@@ -35,7 +35,7 @@ class AboutSection extends React.Component {
                 </p>
               </div>
               <Scroll to="partners" smooth={true} offset={0} duration={500}>
-                <button className="special">Our Partners</button>
+                <button className="button special">Our Partners</button>
               </Scroll>
             </div>
           </Slide>
