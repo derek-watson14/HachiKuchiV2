@@ -28,7 +28,7 @@ const Nav = props => {
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('Contact')
+              props.onOpenModal()
             }}
           >
             Contact

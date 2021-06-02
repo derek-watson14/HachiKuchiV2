@@ -2,7 +2,7 @@ import React from 'react'
 
 import ContactForm from './ContactForm'
 
-class Main extends React.Component {
+class ContactModal extends React.Component {
   render() {
     return (
       <div
@@ -12,8 +12,8 @@ class Main extends React.Component {
       >
         <article
           id="Contact"
-          className={`${this.props.article === 'Contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.isModalVisible ? 'active' : ''} ${
+            this.props.modalTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
@@ -40,7 +40,7 @@ class Main extends React.Component {
           <div
             className="close"
             onClick={() => {
-              this.props.onCloseArticle()
+              this.props.onCloseModal()
             }}
           ></div>
         </article>
@@ -49,4 +49,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main
+export default ContactModal

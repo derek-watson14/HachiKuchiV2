@@ -1,27 +1,24 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Hero from '../components/sections/hero/Hero'
 import About from '../components/sections/About'
 import Events from '../components/sections/Events'
 // import FooterSection from '../components/sections/Footer'
-import Partners from '../components/sections/Partners'
+import Partners from '../components/sections/partners/Partners'
 import Team from '../components/sections/Team'
 
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isArticleVisible: false,
+      isModalVisible: false,
       timeout: false,
-      articleTimeout: false,
-      article: '',
+      modalTimeout: false,
       loading: 'is-loading',
     }
-    this.handleOpenArticle = this.handleOpenArticle.bind(this)
-    this.handleCloseArticle = this.handleCloseArticle.bind(this)
+    this.handleOpenModal = this.handleOpenModal.bind(this)
+    this.handleCloseModal = this.handleCloseModal.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
   }
@@ -44,10 +41,9 @@ class IndexPage extends React.Component {
     this.wrapperRef = node
   }
 
-  handleOpenArticle(article) {
+  handleOpenModal() {
     this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
-      article,
+      isModalVisible: !this.state.isModalVisible,
     })
 
     setTimeout(() => {
@@ -58,14 +54,14 @@ class IndexPage extends React.Component {
 
     setTimeout(() => {
       this.setState({
-        articleTimeout: !this.state.articleTimeout,
+        modalTimeout: !this.state.modalTimeout,
       })
     }, 350)
   }
 
-  handleCloseArticle() {
+  handleCloseModal() {
     this.setState({
-      articleTimeout: !this.state.articleTimeout,
+      modalTimeout: !this.state.modalTimeout,
     })
 
     setTimeout(() => {
@@ -76,16 +72,15 @@ class IndexPage extends React.Component {
 
     setTimeout(() => {
       this.setState({
-        isArticleVisible: !this.state.isArticleVisible,
-        article: '',
+        isModalVisible: !this.state.isModalVisible,
       })
     }, 350)
   }
 
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      if (this.state.isArticleVisible) {
-        this.handleCloseArticle()
+      if (this.state.isModalVisible) {
+        this.handleCloseModal()
       }
     }
   }
@@ -95,24 +90,17 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location}>
         <div
           className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? 'is-article-visible' : ''
+            this.state.isModalVisible ? 'is-article-visible' : ''
           }`}
         >
-          <section id="hero" className="wrapper">
-            <Header
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
-            <Main
-              isArticleVisible={this.state.isArticleVisible}
-              timeout={this.state.timeout}
-              articleTimeout={this.state.articleTimeout}
-              article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
-              setWrapperRef={this.setWrapperRef}
-            />
-            <Footer timeout={this.state.timeout} />
-          </section>
+          <Hero
+            isModalVisible={this.state.isModalVisible}
+            timeout={this.state.timeout}
+            modalTimeout={this.state.modalTimeout}
+            onOpenModal={this.handleOpenModal}
+            onCloseModal={this.handleCloseModal}
+            setWrapperRef={this.setWrapperRef}
+          />
           <About />
           <Partners />
           <Team />
