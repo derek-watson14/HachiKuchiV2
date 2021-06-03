@@ -6,7 +6,7 @@ import About from '../components/sections/About'
 import Events from '../components/sections/events/Events'
 import Footer from '../components/sections/Footer'
 import Partners from '../components/sections/partners/Partners'
-import Team from '../components/sections/Team'
+import Team from '../components/sections/team/Team'
 
 class IndexPage extends React.Component {
   constructor(props) {

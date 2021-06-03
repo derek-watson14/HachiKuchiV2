@@ -10,17 +10,17 @@ const Nav = props => {
             <button className="button">About</button>
           </li>
         </Scroll>
-        <Scroll to="partners" smooth={true} offset={50} duration={500}>
-          <li>
-            <button className="button">Partners</button>
-          </li>
-        </Scroll>
-        <Scroll to="team" smooth={true} offset={50} duration={500}>
+        <Scroll to="team" smooth={true} offset={20} duration={500}>
           <li>
             <button className="button">Team</button>
           </li>
         </Scroll>
-        <Scroll to="events" smooth={true} offset={50} duration={500}>
+        <Scroll to="partners" smooth={true} offset={20} duration={500}>
+          <li>
+            <button className="button">Partners</button>
+          </li>
+        </Scroll>
+        <Scroll to="events" smooth={true} offset={20} duration={500}>
           <li>
             <button className="button">Events</button>
           </li>

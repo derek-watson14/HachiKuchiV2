@@ -1,31 +1,40 @@
 #team {
   // background-color: #8246aa;
-  background-color: _palette(hk-yellow);
+  background-color: _palette(blk);
   h1,
   h2,
   h3,
   h4,
   h5 {
-    color: _palette(blk);
-    border-color: _palette(blk);
+    color: _palette(wht);
+    border-color: _palette(wht);
   }
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
-  padding: 5rem 2rem;
+  min-height: 20rem;
+  padding: 4rem 2rem;
 
-  .team__header {
-    margin-bottom: 5rem;
+  .title-spacer {
+    width: 100%;
+    max-width: 1300px;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr 2fr;
+    @include breakpoint(small) {
+      grid-template-columns: 1fr;
+    }
+    .team__header {
+      margin-bottom: 2rem;
+    }
   }
   .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 1200px;
   }
   .member {
     display: flex;
@@ -35,19 +44,18 @@
     margin-bottom: 2rem;
     .member__img {
       border-radius: 50%;
+      border: 3px solid _palette(wht);
       max-width: 150px;
-      box-shadow: 0px 0px 10px -5px _palette(blk);
       margin-bottom: 1rem;
     }
     .member__name {
       width: 150px;
       padding: 0.2rem 0 0.4rem 0;
-      // border-top: 1px solid _palette(blk);
-      border-bottom: 1px solid _palette(blk);
+      border-bottom: 1px solid _palette(wht);
       margin-bottom: 0.5rem;
     }
     h3 {
-      // text-align: center;
+      color: _palette(hk-yellow);
       margin: 0;
       line-height: 1.25;
     }
@@ -56,7 +64,6 @@
       line-height: 1;
       letter-spacing: 1.5px;
       text-transform: none;
-      // text-align: center;
     }
   }
 }

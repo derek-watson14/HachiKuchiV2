@@ -62,13 +62,11 @@ input[type='reset'],
   }
 
   &.card-btn {
-    background-color: transparent;
-    color: #1c1c1c !important;
-    // border: 2px #1c1c1c solid;
+    background-color: _palette(hk-yellow);
+    color: _palette(blk) !important;
     box-shadow: none;
-    // font-weight: _font(weight-bold);
     &:hover {
-      background-color: _palette(wht-true);
+      background-color: _palette(hk-hover);
     }
   }
 
