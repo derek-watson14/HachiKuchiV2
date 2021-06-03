@@ -10,25 +10,83 @@
   .event-selector {
     width: 100%;
     max-width: 1300px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 2rem;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
-  .react-calendar {
-    color: _palette(blk);
+  .date-selection {
+    min-height: 465px;
   }
-  .event-card {
-    background: _palette(wht);
+  .dates-display {
+    width: 100%;
+    min-width: 350px;
+    h5 {
+      margin-bottom: 0px;
+    }
+    h3 {
+      color: _palette(hk-yellow);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+    button {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .fa-calendar::before {
+      margin: 0px;
+    }
+  }
+  .dates-select {
+  }
+  .date-select--hidden {
+    display: none;
+  }
+  .event-display {
     height: 100%;
     min-height: 355px;
     width: 100%;
     min-width: 350px;
+    .month-header {
+      color: _palette(hk-yellow);
+    }
+  }
+  .event-card {
+    background: _palette(wht-true);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    h3 {
+    height: 200px;
+    color: _palette(blk-true);
+    margin-bottom: 2rem;
+    .card-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 100%;
+      // background-color: _palette(hk-yellow);
+    }
+    .card-info {
+      padding: 1rem;
+      height: 100%;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       color: _palette(blk-true);
+    }
+    img {
+      height: 100%;
+      max-height: 250px;
     }
   }
 }
