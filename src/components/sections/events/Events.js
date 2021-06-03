@@ -14,7 +14,7 @@ const EventsSection = () => {
   console.log(format(today, 'EEEE, MMM d'))
 
   const [dates, setDates] = useState([today, oneMonthLater])
-  const [showCalendar, setShowCalendar] = useState(true)
+  const [showCalendar, setShowCalendar] = useState(false)
 
   const toggleCalendarDisplay = () => {
     setShowCalendar(!showCalendar)
@@ -24,7 +24,7 @@ const EventsSection = () => {
     <section id="events" className="wrapper">
       <div className="events-header">
         <Fade>
-          <h2 className="major">Upcoming Events</h2>
+          <h2 className="major events-title">Upcoming Events</h2>
         </Fade>
         <div className="event-selector">
           <div className="date-selection">
