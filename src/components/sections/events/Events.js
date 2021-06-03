@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import Fade from 'react-reveal/Slide'
 import Calendar from 'react-calendar'
 import { addDays, format } from 'date-fns'
+import { FaRegCalendarAlt } from 'react-icons/fa'
 
 import EventCard from './EventCard'
+import sampEvent from '../../../images/samp-event.jpg'
 
 const EventsSection = () => {
   const today = Date.now()
-  const oneMonthLater = addDays(today, 28)
+  const oneMonthLater = addDays(today, 56)
 
   console.log(format(today, 'EEEE, MMM d'))
 
@@ -32,9 +34,11 @@ const EventsSection = () => {
               <span>
                 <button
                   aria-label="Toggle calendar display"
-                  className="button special icon fa-calendar"
+                  className="button special icon-button"
                   onClick={toggleCalendarDisplay}
-                ></button>
+                >
+                  <FaRegCalendarAlt size={18} />
+                </button>
               </span>
             </h3>
           </div>
@@ -52,8 +56,14 @@ const EventsSection = () => {
         </div>
         <div className="event-display">
           <h3 className="month-header">June</h3>
-          <EventCard />
-          <EventCard />
+          <EventCard
+            dayWeek="Sun"
+            dayMonth="6"
+            monthYear="Jun '21"
+            image={sampEvent}
+            eventName="Dirty Projectors"
+            description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, consequatur iste! Debitis aperiam sint unde perferendis modi, quod neque error?"
+          />
         </div>
       </div>
     </section>

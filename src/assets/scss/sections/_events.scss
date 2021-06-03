@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   min-height: 75vh;
+  padding: 5rem 2rem;
+  @include breakpoint(xsmall) {
+    padding: 5rem 0.5rem;
+  }
   .events__header {
     margin-bottom: 4rem;
   }
@@ -12,10 +16,11 @@
     max-width: 1300px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
   }
   .date-selection {
-    min-height: 465px;
   }
   .dates-display {
     width: 100%;
@@ -66,9 +71,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 150px;
+      width: 175px;
       height: 100%;
-      // background-color: _palette(hk-yellow);
     }
     .card-info {
       padding: 1rem;
@@ -83,6 +87,13 @@
     h4,
     h5 {
       color: _palette(blk-true);
+      margin-bottom: 0;
+    }
+    h1 {
+      font-family: _font(family);
+      font-weight: 900;
+      letter-spacing: 0.1rem;
+      font-size: 3.25rem;
     }
     img {
       height: 100%;

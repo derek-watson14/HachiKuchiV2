@@ -48,7 +48,10 @@ class HeroSection extends React.Component {
           </div>
           <Nav onOpenModal={this.props.onOpenModal} />
         </header>
-        <div id="footer" style={this.props.timeout ? { display: 'none' } : {}}>
+        <div
+          id="heroFooter"
+          style={this.props.timeout ? { display: 'none' } : {}}
+        >
           <p className="copyright">
             &copy; Hachi Kuchi - {new Date().getFullYear()}.
           </p>

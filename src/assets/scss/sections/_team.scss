@@ -23,9 +23,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 1200px;
   }
   .member {
     display: flex;
@@ -33,14 +33,30 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    @include breakpoint(small) {
-      width: 100%;
-    }
     .member__img {
       border-radius: 50%;
-      max-width: 175px;
-      margin-bottom: 1.2rem;
-      box-shadow: 0px 0px 20px -5px _palette(blk);
+      max-width: 150px;
+      box-shadow: 0px 0px 10px -5px _palette(blk);
+      margin-bottom: 1rem;
+    }
+    .member__name {
+      width: 150px;
+      padding: 0.2rem 0 0.4rem 0;
+      // border-top: 1px solid _palette(blk);
+      border-bottom: 1px solid _palette(blk);
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      // text-align: center;
+      margin: 0;
+      line-height: 1.25;
+    }
+    h5 {
+      width: 150px;
+      line-height: 1;
+      letter-spacing: 1.5px;
+      text-transform: none;
+      // text-align: center;
     }
   }
 }

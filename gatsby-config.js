@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Hachi Kuchi Art Collective',
-    author: 'Hunter Chang & Derek Watson',
+    author: 'Derek Watson & Hunter Chang',
     description: '',
   },
   plugins: [

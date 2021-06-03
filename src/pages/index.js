@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Hero from '../components/sections/hero/Hero'
 import About from '../components/sections/About'
 import Events from '../components/sections/events/Events'
-// import FooterSection from '../components/sections/Footer'
+import Footer from '../components/sections/Footer'
 import Partners from '../components/sections/partners/Partners'
 import Team from '../components/sections/Team'
 
@@ -102,9 +102,10 @@ class IndexPage extends React.Component {
             setWrapperRef={this.setWrapperRef}
           />
           <About />
-          <Partners />
           <Team />
+          <Partners />
           <Events />
+          <Footer />
           <div id="bg"></div>
         </div>
       </Layout>

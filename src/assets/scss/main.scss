@@ -3,7 +3,7 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import '../css/font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600,900');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 /*
@@ -51,6 +51,7 @@
 @import 'sections/partners';
 @import 'sections/events';
 @import 'sections/team';
+@import 'sections/footer';
 
 // Layout.
 
@@ -58,4 +59,4 @@
 @import 'layout/wrapper';
 @import 'layout/header';
 @import 'layout/main';
-@import 'layout/footer';
+@import 'layout/heroFooter';
