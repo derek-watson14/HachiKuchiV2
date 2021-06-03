@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 
 import Hero from '../components/sections/hero/Hero'
 import About from '../components/sections/About'
-import Events from '../components/sections/Events'
+import Events from '../components/sections/events/Events'
 // import FooterSection from '../components/sections/Footer'
 import Partners from '../components/sections/partners/Partners'
 import Team from '../components/sections/Team'

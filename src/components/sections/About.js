@@ -11,7 +11,7 @@ class AboutSection extends React.Component {
         <div className="about__wrapper">
           <Slide left>
             <div className="about__image">
-              <img src={fullLogo} />
+              <img src={fullLogo} alt="Hachi Kuchi logo" />
             </div>
           </Slide>
           <Slide right>

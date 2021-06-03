@@ -3,6 +3,17 @@ import React from 'react'
 import ContactForm from './ContactForm'
 
 class ContactModal extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleKeyUp = this.handleKeyUp.bind(this)
+  }
+
+  handleKeyUp(e) {
+    if (e.key === 'Enter') {
+      this.props.onCloseModal()
+    }
+  }
+
   render() {
     return (
       <div
@@ -39,9 +50,13 @@ class ContactModal extends React.Component {
           </ul>
           <div
             className="close"
+            role="button"
+            aria-label="Close modal"
+            tabindex={0}
             onClick={() => {
               this.props.onCloseModal()
             }}
+            onKeyUp={this.handleKeyUp}
           ></div>
         </article>
       </div>

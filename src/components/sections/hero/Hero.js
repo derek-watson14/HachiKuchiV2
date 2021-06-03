@@ -13,10 +13,6 @@ import wonderland from '../../../images/logos/wonderland.png'
 import hachi_kuchi from '../../../images/logos/hachi.png'
 
 class HeroSection extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <section id="hero" className="wrapper">
