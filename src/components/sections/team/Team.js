@@ -13,11 +13,10 @@ class TeamSection extends React.Component {
     return (
       <section id="team" className="wrapper">
         <div className="title-spacer">
-          <div />
           <h2 className="major team__header">Team and Investors</h2>
+          <div />
         </div>
         <div className="title-spacer">
-          <div />
           <div className="team-members">
             <TeamMember
               image={tyler}
@@ -50,6 +49,7 @@ class TeamSection extends React.Component {
               title={'OG Link Marine'}
             />
           </div>
+          <div />
         </div>
       </section>
     )

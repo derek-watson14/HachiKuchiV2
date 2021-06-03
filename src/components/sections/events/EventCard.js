@@ -1,5 +1,4 @@
 import React from 'react'
-import sampEvent from '../../../images/samp-event.jpg'
 
 const EventCard = props => {
   const { dayWeek, dayMonth, monthYear, image, eventName, description } = props
@@ -14,8 +13,6 @@ const EventCard = props => {
       <div className="card-info">
         <h2>{eventName}</h2>
         <p>{description}</p>
-        {/* <button className="button">See Details</button>
-        <button className="button special">Buy Tickets</button> */}
       </div>
     </div>
   )

@@ -9,11 +9,6 @@ class AboutSection extends React.Component {
     return (
       <section id="about" className="wrapper">
         <div className="about__wrapper">
-          <Slide left>
-            <div className="about__image">
-              <img src={fullLogo} alt="Hachi Kuchi logo" />
-            </div>
-          </Slide>
           <Slide right>
             <div className="about__text">
               <h2 className="major">What is Hachi Kuchi?</h2>
@@ -37,6 +32,11 @@ class AboutSection extends React.Component {
               <Scroll to="partners" smooth={true} offset={0} duration={500}>
                 <button className="button special">Our Partners</button>
               </Scroll>
+            </div>
+          </Slide>
+          <Slide left>
+            <div className="about__image">
+              <img src={fullLogo} alt="Hachi Kuchi logo" />
             </div>
           </Slide>
         </div>

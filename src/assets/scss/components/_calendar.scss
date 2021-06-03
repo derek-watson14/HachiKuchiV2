@@ -11,7 +11,9 @@ $hk-30: #ffffce;
   max-width: 100%;
   background: white;
   color: _palette(blk);
-  // border: 1px solid #a0a096;
+  border-bottom: 1px solid _palette(blk);
+  border-left: 1px solid _palette(blk);
+  border-right: 1px solid _palette(blk);
   font-family: _font(family);
   line-height: 1.125em;
 }

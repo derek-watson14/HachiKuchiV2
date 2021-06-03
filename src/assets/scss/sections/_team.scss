@@ -14,13 +14,16 @@
   align-items: center;
   min-height: 20rem;
   padding: 4rem 2rem;
+  @include breakpoint(xsmall) {
+    padding: 2rem 1rem;
+  }
 
   .title-spacer {
     width: 100%;
     max-width: 1300px;
     display: grid;
     justify-content: start;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     @include breakpoint(small) {
       grid-template-columns: 1fr;
     }
@@ -31,7 +34,7 @@
   .team-members {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 1.25rem;
+    grid-gap: 1.1rem;
     justify-content: center;
     align-items: center;
     width: 100%;

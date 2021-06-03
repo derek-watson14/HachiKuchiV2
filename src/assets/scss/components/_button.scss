@@ -83,6 +83,9 @@ input[type='reset'],
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+  border-top: 1px solid _palette(blk);
+  border-left: 1px solid _palette(blk);
+  border-right: 1px solid _palette(blk);
 }
 
 input[type='submit'],
